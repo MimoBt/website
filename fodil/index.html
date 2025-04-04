@@ -24,28 +24,45 @@
                 <div class="logo">
                     <img src="téléchargement.jpg" alt="Edinburgh Trusted Trader Logo" class="trusted-trader-logo" style="height: 90px; margin-right: 15px;">
                     <img src="cropped-logo4.png" alt="Edinburgh Plumbing Direct Logo" class="company-logo">
+                    <li class="safe"><img src="gsr-logo-nokeyline.png" alt="Gas Safe Register Logo" class="gas-safe-logo" style="height: 70px; margin-left: 15px;"></li>
+
                 </div>
                 <nav class="main-nav">
-                    <ul>
+                    <input type="checkbox" id="sidebar-active">
+                    <label for="sidebar-active" class="open-sidebar-btn">
+                        <i class="fa-solid fa-bars fa-xl"></i>
+                    </label>
+                    <label for="sidebar-active" id="overlay"></label>
+                    <div class="container-links">
+                        <div class="close">
+                        <label for="sidebar-active" class="close-sidebar-btn">
+                            <i class="fa-solid fa-xmark fa-xl"></i>
+                        </label>
+                        </div>
+                     <ul>
                         <li><a href="#home" class="nav-button">Home</a></li>
                         <li><a href="#services" class="nav-button">Services</a></li>
                         <li><a href="#about" class="nav-button">About</a></li>
                         <li><a href="#contact" class="nav-button">Contact</a></li>
                         <li><a href="tel:00447765345116" class="nav-button emergency-button"><i class="fas fa-phone"></i> 07765345116</a></li>
                         <li><a href="#contact" class="nav-button quote-button">Email us</a></li>
-                      <li ><img src="gsr-logo-nokeyline.png" alt="Gas Safe Register Logo" class="gas-safe-logo" style="height: 70px; margin-left: 15px;"></li>
-                    </ul>
+                      <li id="hidd"><img src="gsr-logo-nokeyline.png" alt="Gas Safe Register Logo" class="gas-safe-logo" style="height: 70px; margin-left: 15px;"></li>
+                     </ul>
+                    </div>
+                  
+                    <!-- <input type="checkbox" id="sidebar-active"> -->
+                    <!-- <label for="sidebar-active" class="open-sidebar-btn">
+                        <i class="fa-solid fa-bars fa-xl"></i>
+                    </label> -->
                 </nav>
-                <button class="mobile-menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+            
+
+                
             </div>
         </div>
     </header>
 
-    <div class="rating-section">
+    <div class="rating-section" >
         <div class="container">
             <div class="rating-wrapper">
                 <h3>Our customers say excellent</h3>
@@ -66,7 +83,7 @@
         </div>
     </div>
 
-    <section class="hero">
+    <section class="hero hidden" id="home">
         <div class="hero-slider">
             <div class="slide">
                 <div class="hero-image">
@@ -84,20 +101,20 @@
         </div>
     </section>
 
-    <section class="features">
+    <section class="features " >
         <div class="container">
             <div class="features-grid">
-                <div class="feature">
+                <div class="feature hidden">
                     <i class="fas fa-clock"></i>
                     <h3>24/7 Service</h3>
                     <p>Available day and night for emergencies</p>
                 </div>
-                <div class="feature">
+                <div class="feature hidden">
                     <i class="fas fa-shield-alt"></i>
                     <h3>Strong reputation and great ratings</h3>
                     <p>We pride ourselves on being Edinburgh's most trusted plumbing & heating engineers.</p>
                 </div>
-                <div class="feature">
+                <div class="feature hidden">
                     <i class="fas fa-check-circle"></i>
                     <h3>Qualified Experts</h3>
                     <p>Qualified gas engineers and plumbers </p>
@@ -108,192 +125,163 @@
 
 
 
-    <section class="services" id="services">
-        <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <div class="services-grid">
-                <!-- Boiler Service -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-fire"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3>Boiler Services</h3>
-                        <ul>
-                            <li>Boiler Installation</li>
-                            <li>Annual Maintenance</li>
-                            <li>Repairs</li>
-                            <li>Landlord safety certificate</li>
-                        </ul>
-                        <a href="#contact" class="btn btn-outline">Contact Us</a>
-                    </div>
-                </div>
-
-                <!-- Radiator Service -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-thermometer-half"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3>Radiator Services</h3>
-                        <ul>
-                            <li>Installation</li>
-                            <li>Power Flushing</li>
-                            <li>Thermostatic Valves</li>
-                            <li>Maintenance</li>
-                        </ul>
-                        <a href="#contact" class="btn btn-outline">Contact Us</a>
-                    </div>
-                </div>
-
-                <!-- Central Heating -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-temperature-high"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3>Central Heating</h3>
-                        <ul>
-                            <li> full System Installation</li>
-                            <li>smart wireless thermostat Installation</li>
-                            <li>Heating Controls</li>
-                            
-                        </ul>
-                        <a href="#contact" class="btn btn-outline">Contact Us</a>
-                    </div>
-                </div>
-
-                <!-- Plumbing -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-wrench"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3>Plumbing Services</h3>
-                        <ul>
-                            <li>Leak Repairs</li>
-                            <li>Pipe Installation</li>
-                            <li>Bathroom Fitting</li>
-                            <li>Emergency Repairs</li>
-                        </ul>
-                        <a href="#contact" class="btn btn-outline">Contact Us</a>
-                    </div>
-                </div>
-
-                <!-- Gas Fire -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-fire-alt"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3>Gas Fire Services</h3>
-                        <ul>
-                            
-                            <li>Servicing</li>
-                            <li>Repairs</li>
-                           
-                        </ul>
-                        <a href="#contact" class="btn btn-outline">Contact Us</a>
-                    </div>
-                </div>
+    <section class="services hidden" id="services">
+        <div class="services-section">
+            <!-- Boiler Service -->
+            <div class="service-card">
+                <img src="photo_2025-04-02_09-22-22.jpg" alt="Boiler Service">
+                <h3>Boiler Service</h3>
+                <ul>
+                    <li>Boiler Installation</li>
+                    <li>Repairs & Maintenance</li>
+                    <li>Annual Service</li>
+                </ul>
             </div>
-        </div>
-    </section>
+        
+            <!-- Radiator Service -->
+            <div class="service-card">
+                <img src="photo_2025-04-02_09-22-38.jpg" alt="Radiator Service">
+                <h3>Radiator Service</h3>
+                <ul>
+                    <li>Radiator Installation</li>
+                    <li>Power Flushing</li>
+                    <li>Repairs & Maintenance</li>
+                </ul>
+            </div>
+        
+            <!-- Central Heating -->
+            <div class="service-card">
+                <img src="photo_2025-04-02_09-22-34.jpg" alt="Central Heating">
+                <h3>Central Heating</h3>
+                <ul>
+                    <li>System Installation</li>
+                    <li>Maintenance & Repairs</li>
+                    <li>System Upgrades</li>
+                </ul>
+            </div>
+        
+            <!-- Plumbing Service -->
+            <div class="service-card">
+                <img src="photo_2025-04-02_09-22-30.jpg" alt="Plumbing Service">
+                <h3>Plumbing Service</h3>
+                <ul>
+                    <li>Emergency Repairs</li>
+                    <li>Installation Work</li>
+                    <li>Leak Detection</li>
+                </ul>
+            </div>
+        
+            <!-- Gas Fire Service -->
+            <div class="service-card">
+                <img src="photo_2025-04-02_09-22-45.jpg" alt="Gas Fire Service">
+                <h3>Gas Fire Service</h3>
+                <ul>
+                    <li>Installation</li>
+                    <li>Safety Checks</li>
+                    <li>Maintenance & Repairs</li>
+                </ul>
+            </div>
+        </div></section>
 
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2 class="section-title">About Us</h2>
-                    <div class="about-description">
-                        <p>Welcome to Edinburgh Plumbing Direct, your trusted partner for all plumbing and heating needs in Edinburgh and surrounding areas.</p>
-                        
-                        <div class="about-features">
-                            <div class="about-feature">
-                                <i class="fas fa-history"></i>
-                                <h3>Years of Experience</h3>
-                                <p>With over 10 years of experience, we've built a reputation for excellence in plumbing and heating services.</p>
-                            </div>
+
+   
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">About Us</h2>
+                        <div class="about-description">
+                            <p>Welcome to Edinburgh Plumbing Direct, your trusted partner for all plumbing and heating needs in Edinburgh and surrounding areas.</p>
                             
-                            <div class="about-feature">
-                                <i class="fas fa-certificate"></i>
-                                <h3>Certified Professionals</h3>
-                                <p>Our team consists of fully licensed and certified plumbing professionals And Qualified gas safe  registered engineers who are committed to delivering top-quality service.</p>
+                            <div class="about-features">
+                                <div class="about-feature">
+                                    <i class="fas fa-history"></i>
+                                    <h3>Years of Experience</h3>
+                                    <p>With over 10 years of experience, we've built a reputation for excellence in plumbing and heating services.</p>
+                                </div>
+                                
+                                <div class="about-feature">
+                                    <i class="fas fa-certificate"></i>
+                                    <h3>Certified Professionals</h3>
+                                    <p>Our team consists of fully licensed and certified plumbing professionals And Qualified gas safe  registered engineers who are committed to delivering top-quality service.</p>
+                                </div>
+                                
+                                <div class="about-feature">
+                                    <i class="fas fa-heart"></i>
+                                    <h3>Customer Satisfaction</h3>
+                                    <p>We pride ourselves on providing exceptional customer service and ensuring 100% satisfaction with every job.</p>
+                                </div>
                             </div>
+    
+                            <div class="about-values">
+                                <h3>Our Values</h3>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Reliability and Punctuality</li>
+                                    <li><i class="fas fa-check"></i> Transparent Pricing</li>
+                                    <li><i class="fas fa-check"></i> Quality Workmanship</li>
+                                    <li><i class="fas fa-check"></i> Professional Service</li>
+                                </ul>
+                            </div>
+    
                             
-                            <div class="about-feature">
-                                <i class="fas fa-heart"></i>
-                                <h3>Customer Satisfaction</h3>
-                                <p>We pride ourselves on providing exceptional customer service and ensuring 100% satisfaction with every job.</p>
-                            </div>
-                        </div>
-
-                        <div class="about-values">
-                            <h3>Our Values</h3>
-                            <ul>
-                                <li><i class="fas fa-check"></i> Reliability and Punctuality</li>
-                                <li><i class="fas fa-check"></i> Transparent Pricing</li>
-                                <li><i class="fas fa-check"></i> Quality Workmanship</li>
-                                <li><i class="fas fa-check"></i> Professional Service</li>
-                            </ul>
-                        </div>
-
-                        <div class="certifications">
-                           
-                            <div class="certification-grid">
-                                <div class="certification-item">
-                                    <img src="woster bosh.jpg" alt="Gas Safe Register" class="cert-logo">
-                                    <h4>Worcester bosh</h4>
-                                </div>
-                                <div class="certification-item">
-                                    <img src="villnt.png" alt="Vaillant" class="cert-logo">
-                                    <h4>Vaillant</h4>
-                                </div>
-                                <div class="certification-item">
-                                    <img src="fin.jpg" alt="Vaillant" class="cert-logo">
-                                    <h4>gloW Worm</h4>
-                                </div>
-                                <div class="certification-item">
-                                    <img src="no fin.jpg" alt="Vaillant" class="cert-logo">
-                                    <h4>baxi</h4>
-                                </div>
-                                <div class="certification-item">
-                                    <img src="ffin.jpg" alt="Vaillant" class="cert-logo">
-                                    <h4>ideal</h4>
-                                </div>
-                                <div class="certification-item">
-                                    <img src="voker.png" alt="Vokera Heating for Life" class="cert-logo">
-                                    <h4>Vokera</h4>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="about-image-container">
-                    <div class="about-image">
-                        <img src="plumber-residential-kitchen-faucet-640w (1).webp" alt="Professional Plumber at Work">
-                    </div>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">10+</span>
-                            <span class="stat-label">Years Experience</span>
+                    
+                    <div class="about-image-container">
+                        <div class="about-image">
+                            <img src="plumber-residential-kitchen-faucet-640w (1).webp" alt="Professional Plumber at Work">
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">1000+</span>
-                            <span class="stat-label">Happy Clients</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">24/7</span>
-                            <span class="stat-label">Emergency Service</span>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">1000+</span>
+                                <span class="stat-label">Happy Clients</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">24/7</span>
+                                <span class="stat-label">Emergency Service</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <div class="certifications">
+                              <h1 class="mimo">Our certification</h1> 
+            <div class="certification-grid">
+                <div class="certification-item">
+                    <img src="woster bosh.jpg" alt="Gas Safe Register" class="cert-logo" >
+                    <h4>Worcester bosh</h4>
+                </div>
+                <div class="certification-item">
+                    <img src="villnt.png" alt="Vaillant" class="cert-logo">
+                    <h4>Vaillant</h4>
+                </div>
+                <div class="certification-item">
+                    <img src="fin.jpg" alt="Vaillant" class="cert-logo">
+                    <h4>gloW Worm</h4>
+                </div>
+                <div class="certification-item">
+                    <img src="no fin.jpg" alt="Vaillant" class="cert-logo" >
+                    <h4>baxi</h4>
+                </div>
+                <div class="certification-item">
+                    <img src="ffin.jpg" alt="Vaillant" class="cert-logo">
+                    <h4>ideal</h4>
+                </div>
+                <div class="certification-item">
+                    <img src="voker.png" alt="Vokera Heating for Life" class="cert-logo">
+                    <h4>Vokera</h4>
+                </div>
+            </div>
         </div>
-    </section>
-
-    <section class="reviews-section">
+<div class="km">
+  <center> <img src="photok.jpg" width="400px"  ></center> 
+</div>
+    <section class="reviews-section hidden">
         <div class="container">
             <h2 class="section-title">Our Clients</h2>
             <div class="reviews-grid">
@@ -344,16 +332,16 @@
                 </div>
             </div>
         </div>
-       <center><a href="https://www.trustedtrader.scot/Edinburgh/Edinburgh-Plumbing-D-0001694.html"> show all reviews</a></center>
+       <center><a href="https://www.trustedtrader.scot/Edinburgh/Edinburgh-Plumbing-D-0001694.html" class="btn btn-primary rv"> show all reviews</a></center>
     </section>
 
     <section class="cta-section">
         <div class="container">
             <div class="cta-grid">
-                <div class="cta-image">
+                <div class="cta-image cta hidden">
                     <img src="boiler_servicing.jpg" alt="boiler service">
                 </div>
-                <div class="cta-content">
+                <div class="cta-content cta hidden">
                     <h2>Need a Plumber or gas engineer?</h2>
                     <p>Our team is available 24/7</p>
                     <div class="cta-buttons">
@@ -370,7 +358,7 @@
     <section class="contact" id="contact">
         <div class="container">
             <div class="contact-grid">
-                <div class="contact-info">
+                <div class="contact-info hidden">
                     <h2>Contact Us</h2>
                     <div class="info-items">
                         <div class="info-item">
@@ -398,29 +386,33 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact-form">
+                <div class="contact-form hidden">
                     <form id="contactForm" method="POST" action="process_contact.php">
                         <div class="form-group">
-                            <input type="text" name="name" placeholder="Nom" required>
+                            <input type="text" name="name" placeholder="Name" required>
                         </div>
                         <div class="form-group">
                             <input type="email" name="email" placeholder="Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" name="phone" placeholder="Téléphone" required>
+                            <input type="tel" name="phone" placeholder="phone number" required>
                         </div>
                         <div class="form-group">
                             <select name="service" required>
-                                <option value="">Type de Service</option>
-                                <option value="plumbing">Plomberie</option>
-                                <option value="heating">Chauffage</option>
-                                <option value="emergency">Urgence</option>
+                                <option value="">the Services</option>
+                                <option value="plumbing">plumbing</option>
+                                <option value="heating">gas fire</option>
+                                <option value="emergency">Central Heating</option>
+                                <option value="boiler">boiler_servicing</option>
+                                <option value="Radiator Service">Radiator Service</option>
+                               
+                                <option value="Service">other Services</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <textarea name="message" placeholder="Message" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                        <button type="submit" class="btn btn-primary">submit</button>
                     </form>
                 </div>
             </div>
@@ -476,5 +468,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
