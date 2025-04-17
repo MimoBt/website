@@ -58,8 +58,8 @@ app.post("/process-contact", async (req, res) => {
         port: 465,
         secure: true, 
         auth: {
-            user: 'mimoubtt@gmail.com',
-            pass: 'akmh dyjm smmw dfrw'
+            user: 'Edinburghplumbingdirect@gmail.com',
+            pass: 'dkja osmq rhxo yokq'
         }
     });
 
@@ -67,7 +67,7 @@ app.post("/process-contact", async (req, res) => {
         // Send email
         await transporter.sendMail({
             from: email,
-            to: 'mimoubtt@gmail.com',
+            to: 'Edinburghplumbingdirect@gmail.com',
             subject: 'New Contact Form Submission',
             html: `
                 <p>Name: ${name}</p>
